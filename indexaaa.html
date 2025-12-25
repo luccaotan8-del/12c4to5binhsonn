@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Các Thành viên tổ 5</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .team-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .profile-card {
+        position: relative;
+        width: 150px;
+        aspect-ratio: 9 / 16;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.5s ease;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.5s ease;
+    }
+
+    .profile-card.active img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        object-fit: cover;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        border: 2px solid #333;
+    }
+
+    .info {
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        text-align: center;
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: all 0.5s ease;
+        z-index: 1;
+    }
+
+    .profile-card.active .info {
+        opacity: 1;
+        max-height: 250px;
+    }
+
+    .info h2 {
+        margin: 10px 0 5px;
+        font-size: 16px;
+    }
+
+    .info p {
+        margin: 2px 0;
+        font-size: 12px;
+        color: #555;
+    }
+
+    .video-section {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .video-section iframe {
+        width: 80%;
+        max-width: 600px;
+        height: 340px;
+        border: none;
+        border-radius: 15px;
+    }
+
+    .video-section h2 {
+        margin-top: 15px;
+        font-size: 20px;
+        color: #333;
+    }
+</style>
+</head>
+<body>
+
+<h1>Thành Viên Tổ 5 12C4</h1>
+<h1>Nhấp vào ảnh thành viên để biết thêm thông tin</h1>
+<div class="team-container">
+    <div class="profile-card">
+        <img src="https://github.com/luccaotan8-del/Caotanluc/blob/main/8091bf5e-3ef0-4af7-9cde-0ae140df043d.jpg?raw=true" alt="Member 1">
+        <div class="info">
+            <h2>Nguyễn Tấn Dũng</h2>
+            <p>Tuổi: 17</p>
+            <p>Sở thích: Học bài</p>
+            <p>Ngày sinh: 15/09/2008</p>
+        </div>
+    </div>
+
+    <div class="profile-card">
+        <img src="https://github.com/luccaotan8-del/Caotanluc/blob/main/9561d47e-6fde-4dc6-98b6-2689131552fa.jpg?raw=true" alt="Member 2">
+        <div class="info">
+            <h2> Đào Gia Tuệ</h2>
+            <p>Tuổi: 17</p>
+            <p>Sở thích: Nuôi mèo</p>
+            <p>Ngày sinh:  21/10/2008</p>
+        </div>
+    </div>
+
+    <div class="profile-card">
+        <img src="https://github.com/luccaotan8-del/Caotanluc/blob/main/ac048210-e403-41e4-bbfd-e20e63ec9c5d.jpg?raw=true" alt="Member 3">
+        <div class="info">
+            <h2>Nguyễn Trần Thanh Trúc</h2>
+            <p>Tuổi: 17</p>
+            <p>Sở thích: xem phim
+        </p>
+            <p>Ngày sinh: 29/10/2008</p>
+        </div>
+    </div>
+
+    <div class="profile-card">
+        <img src="https://github.com/luccaotan8-del/Caotanluc/blob/main/71819a16-6448-4998-a0ba-87b89f2325d3.jpg?raw=true" alt="Member 4">
+        <div class="info">
+            <h2>Cù Văn Cường</h2>
+            <p>Tuổi: 17</p>
+            <p>Sở thích: Bida 8 pool</p>
+            <p>Ngày sinh: 08/08/2008</p>
+        </div>
+    </div>
+
+    <div class="profile-card">
+        <img src="https://github.com/luccaotan8-del/Caotanluc/blob/main/d1bc1a62-156b-47a3-8b13-997a1c1f0ec8%20(1).jpg?raw=true" alt="Member 5">
+        <div class="info">
+            <h2>Huỳnh Nhật Khoa</h2>
+            <p>Tuổi: 17</p>
+            <p>Sở thích:  xem đá banh</p>
+            <p>Ngày sinh: 12/08/2008</p>
+        </div>
+    </div>
+
+    <div class="profile-card">
+        <img src="https://github.com/luccaotan8-del/Caotanluc/blob/main/10087aa6-1719-42d5-981e-0229a3ae31de.jpg?raw=true" alt="Member 6">
+        <div class="info">
+            <h2>Nguyễn Đang Vũ</h2>
+            <p>Tuổi: 17</p>
+            <p>Sở thích: Chụp ảnh</p>
+            <p>Ngày sinh: 24/09/2008</p>
+        </div>
+    </div>
+
+    <div class="profile-card">
+        <img src="https://github.com/luccaotan8-del/Caotanluc/blob/main/79747b10-dd33-4d04-817e-615d22c5a512.jpg?raw=true" alt="Member 7">
+        <div class="info">
+            <h2>Cao Tấn Lục</h2>
+            <p>Tuổi: 17</p>
+            <p>Sở thích: Vẽ,Lọ</p>
+            <p>Ngày sinh: 01/04/2008</p>
+        </div>
+    </div>
+
+    <div class="profile-card">
+        <img src="https://github.com/luccaotan8-del/Caotanluc/blob/main/0bd5a490-f225-4804-9fb9-40762dc2d80d.jpg?raw=true" alt="Member 8">
+        <div class="info">
+            <h2> Dương Gia Huy(Tổ Trưởng)</h2>
+            <p>Tuổi: 17</p>
+            <p>Sở thích:  Đi chơi net</p>
+            <p>Ngày sinh: 2/6/2008</p>
+        </div>
+    </div>
+</div>
+
+<div class="video-section">
+    <iframe src="https://res.cloudinary.com/diyzox2af/video/upload/v1766674127/e1275ee1_ch4p5u.mp4" allowfullscreen></iframe>
+    <h2>Video Của Tỏ 5</h2>
+</div>
+
+<script>
+    const cards = document.querySelectorAll('.profile-card');
+    cards.forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('active');
+        });
+    });
+</script>
+
+</body>
+</html>
